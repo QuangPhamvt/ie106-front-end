@@ -10,8 +10,8 @@
     "preview": "vite preview",
     "storybook": "storybook dev -p 6006",
     "build-storybook": "storybook build",
-    "format": "prettier warn --check \"src/**/*.{js, jsx, ts, tsx}",
-    "format:fix": "prettier warn --write \"src/**/*.{js, jsx, ts, tsx}"
+    "format": "prettier  \"src/**/*.{js,jsx,ts,tsx}\" --check",
+    "format:fix": "prettier --write \".src/**/*.{js,jsx,ts,tsx}\""
   },
   "dependencies": {
     "@reduxjs/toolkit": "^1.9.5",
