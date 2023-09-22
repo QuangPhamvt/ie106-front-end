@@ -35,7 +35,7 @@ jobs:
           bun lint
       - name: Build
         run: |
-          bun build
+          bun run build
       - name: Install Vercel CLI
         run: bun install vercel@latest
       - name: Pull Vercel Environment Information
