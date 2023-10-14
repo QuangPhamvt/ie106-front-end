@@ -1,0 +1,32 @@
+name: Deploy on Enviroment Dev
+on:
+  pull_request:
+    branches:
+      - 'master'
+      - 'developement'
+    types:
+      - closed
+jobs:
+  test_preview:
+    strategy:
+      matrix:
+        bun-verison: [1.x.x]
+    runs-on: self-hosted
+    steps:
+      - name: Check code
+        uses: actions/checkout@v4
+
+      - name: Install package use yarn
+        run: |
+          echo "We using bun to install package!"
+          bun install
+
+      - name: Check format
+        run: |
+          echo "Using pettier check"
+          bun format
+
+      - name: Build bunx
+        run: |
+          echo "Bun is Building"
+          bun build
