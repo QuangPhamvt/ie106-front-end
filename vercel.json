@@ -1,0 +1,8 @@
+{
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "buildCommand": "bun build-storybook",
+  "devCommand": "bun storybook",
+  "installCommand": "bun install",
+  "framework": null,
+  "outputDirectory": "./storybook-static"
+}

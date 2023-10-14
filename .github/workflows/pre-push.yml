@@ -3,16 +3,17 @@ env:
   VERCEL_ORG_ID: ${{secrets.VERCEL_ORG_ID}}
   VERCEL_PROJECT_ID: ${{secrets.VERCEL_PROJECT_ID}}
 on:
-  push:
+  pull_request:
     branches:
       - 'master'
       - 'main'
+      - 'development'
       - 'feature/**'
 jobs:
   test_and_preview:
     strategy:
       matrix:
-        bun-version: [1.0.3]
+        bun-version: [1.0.4]
         os: [ubuntu-latest]
     runs-on: ${{matrix.os}}
 
