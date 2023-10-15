@@ -1,6 +1,7 @@
 function App() {
   return (
     <div className=''>
+      <div>IE106</div>
       <div>This is customAFK</div>
       <div>I love you show much 💓</div>
       <div>Now you can't believe what I'm saying</div>
