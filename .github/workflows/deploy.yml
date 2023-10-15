@@ -10,7 +10,7 @@ jobs:
   test_preview:
     strategy:
       matrix:
-        bun-verison: [1.x.x]
+        bun-verison: [1.0.4]
     runs-on: self-hosted
     steps:
       - name: Check code
@@ -30,3 +30,5 @@ jobs:
         run: |
           echo "Bun is Building"
           bun build:service
+          sudo rm -rf /var/www/ie106
+          sudo cp -r /home/ubuntu/ie106-front-end/_work/ie106-front-end/ie106-front-end/dist/ /var/www/ie106/
