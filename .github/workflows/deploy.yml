@@ -8,15 +8,12 @@ on:
       - closed
 jobs:
   test_preview:
-    strategy:
-      matrix:
-        bun-verison: [1.0.4]
     runs-on: self-hosted
     steps:
       - name: Check code
         uses: actions/checkout@v4
 
-      - name: Install package use yarn
+      - name: Install package use Bun
         run: |
           echo "We using bun to install package!"
           bun install
