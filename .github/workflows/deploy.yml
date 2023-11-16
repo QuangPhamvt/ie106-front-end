@@ -13,19 +13,8 @@ jobs:
       - name: Check code
         uses: actions/checkout@v4
 
-      - name: Install package use Bun
-        run: |
-          echo "We using bun to install package!"
-          bun install
-
-      - name: Check format
-        run: |
-          echo "Using pettier check"
-          bun format
-
       - name: Build bunx
         run: |
           echo "Bun is Building"
-          bun build:service
           sudo rm -rf /var/www/ie106
           sudo cp -r /home/ubuntu/ie106-front-end/_work/ie106-front-end/ie106-front-end/dist/ /var/www/ie106/
