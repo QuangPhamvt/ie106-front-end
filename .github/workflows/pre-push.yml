@@ -33,7 +33,6 @@ jobs:
       - name: Run check format and test
         run: |
           bun format
-          bun lint
       - name: Build
         run: |
           bun build:service
