@@ -9,9 +9,20 @@ const meta: Meta<typeof Button> = {
 export default meta
 type Story = StoryObj<typeof Button>
 export const ButtonDefault: Story = {
-  args: {
-    name: 'Click',
-    backGroundColor: '#5ADEFF',
-    status: 'active',
+  argTypes: {
+    height: {
+      control: 'text',
+    },
+    width: {
+      control: 'text',
+    },
+    variant: {
+      control: { type: 'radio' },
+      options: ['outlined', 'contained'],
+    },
+    rounded: {
+      control: { type: 'radio' },
+      options: ['md', 'lg', 'xl', '2xl'],
+    },
   },
 }
