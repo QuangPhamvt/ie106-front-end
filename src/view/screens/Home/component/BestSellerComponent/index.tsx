@@ -19,11 +19,11 @@ const ListPostComponent: React.FC = () => {
     </div>
   )
 }
-export const NewBookHomeComponent: React.FC = () => {
+const BestSellerComponent: React.FC = () => {
   return (
     <div className='container flex flex-col w-full mx-auto'>
       <div className='py-12'>
-        <p className='text-2xl'>Sách mới ra</p>
+        <p className='text-2xl'>Sách bán chạy</p>
       </div>
       <ListPostComponent />
       <div className='flex justify-center w-full py-8'>
@@ -34,3 +34,5 @@ export const NewBookHomeComponent: React.FC = () => {
     </div>
   )
 }
+
+export default BestSellerComponent
