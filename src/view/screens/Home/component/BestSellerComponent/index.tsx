@@ -1,7 +1,12 @@
 import React from 'react'
+import { useNavigate } from 'react-router-dom'
 const ItemPostComponent: React.FC = () => {
+  const navigate = useNavigate()
   return (
-    <div className=' w-[14.75rem] flex flex-col items-center hover:shadow-2xl'>
+    <div
+      onClick={() => navigate('/product')}
+      className=' w-[14.75rem] flex flex-col items-center hover:shadow-2xl hover:cursor-pointer'
+    >
       <div className='w-full h-[23.5rem] bg-gray-300'></div>
       <div className='px-4 py-2 text-xl text-center'>Tên sách (bản thường) - Tên tác giả</div>
       <div className='text-[#4848A4] font-medium py-4'>188.000d</div>

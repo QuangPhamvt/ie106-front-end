@@ -5,4 +5,5 @@ export const PATH = {
   ABOUT: '/about',
   LOG_IN: '/login',
   SIGN_UP: '/signup',
+  CARD_DETAIL: '/product',
 }

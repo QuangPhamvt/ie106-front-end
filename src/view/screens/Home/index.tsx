@@ -11,6 +11,7 @@ const HomeView: React.FC = () => {
       <HeaderHomeComponent />
       <NewBookHomeComponent />
       <BestSellerComponent />
+
       <div className='w-full  bg-[#4848A4] flex flex-col justify-center items-center space-y-8 py-8'>
         <p className='text-4xl font-medium text-white'>BANU STORE - TIỆM SÁCH CỦA BẠN</p>
         <div className='flex flex-row space-x-36'>
@@ -29,6 +30,7 @@ const HomeView: React.FC = () => {
         </div>
       </div>
       <ListPostComponent />
+
       <div className='w-screen h-[27rem] flex flex-col justify-center items-center space-y-4 bg-[#4848A4] text-white'>
         <p className='mt-8 text-6xl font-medium'>HÃY ĐẾN CỬA HÀNG CỦA CHÚNG TÔI</p>
         <p className='text-2xl font-medium'>Khu phố 6, P.Linh Trung, Tp.Thủ Đức, Tp.Hồ Chí Minh</p>
