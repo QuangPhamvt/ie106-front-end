@@ -1,6 +1,7 @@
+import React from 'react'
 import { HeaderHomeComponent } from './component/HeaderHomeComponent'
 
-export const HomeView = () => {
+const HomeView: React.FC = () => {
   return (
     <article className='flex flex-col'>
       <HeaderHomeComponent />
@@ -8,3 +9,4 @@ export const HomeView = () => {
     </article>
   )
 }
+export default HomeView
