@@ -9,7 +9,7 @@
     "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview",
     "sb": "storybook dev -p 6006",
-    "build-storybook": "build-storybook -s public",
+    "build-storybook": "storybook build -s public",
     "format": "prettier  \"src/**/*.{js,jsx,ts,tsx}\" --check",
     "format:fix": "prettier --write \".src/**/*.{js,jsx,ts,tsx}\"",
     "prepare": "husky install"
