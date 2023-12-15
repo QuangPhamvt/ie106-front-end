@@ -67,7 +67,7 @@ const CardDetailView: React.FC = () => {
             <p className='text-3xl font-bold text-[#4848A4]'>Mô tả sản phẩm</p>
             <div className='w-full border-b-[1px] border-black border-solid h-[1px]' content='' />
           </div>
-          <p className={`text-xl font-light ${!isShowMoreText ? 'line-clamp-3' : ''}`}>
+          <p className={`text-xl font-light ${!isShowMoreText ? 'line-clamp-3' : 'animate-fade-down'}`}>
             Nhờ có Mahiru luôn ở bên, Amane đã dũng cảm đối diện với những hồi ức đau khổ trong quá khứ. Trong chuyến về
             thăm nhà bố mẹ Amane, khi cảm nhận được sự chăm sóc, quan tâm và tình cảm ấm áp từ gia đình, Mahiru thấy rất
             hạnh phúc. Ngắm nhìn cô với nụ cười chan chứayêu thương, Amane một lần nữa củng cố quyết tâm sẽ luôn ở bên

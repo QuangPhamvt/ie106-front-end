@@ -6,4 +6,6 @@ export const PATH = {
   LOG_IN: '/login',
   SIGN_UP: '/signup',
   CARD_DETAIL: '/product',
+  ORDER_DETAIL: '/order',
+  CART_LIST: '/cart',
 }
