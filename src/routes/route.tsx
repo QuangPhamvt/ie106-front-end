@@ -1,6 +1,15 @@
 import { createBrowserRouter } from 'react-router-dom'
 import { PATH } from './PATH'
-import { LogInView, Layout, HomeView, SignUpView, CardDetailView } from '@/view'
+import {
+  LogInView,
+  Layout,
+  HomeView,
+  SignUpView,
+  CardDetailView,
+  AboutView,
+  OrderDetailView,
+  CartListView,
+} from '@/view'
 
 const router = createBrowserRouter([
   {
@@ -14,6 +23,18 @@ const router = createBrowserRouter([
       {
         path: PATH.CARD_DETAIL,
         element: <CardDetailView />,
+      },
+      {
+        path: PATH.ABOUT,
+        element: <AboutView />,
+      },
+      {
+        path: PATH.ORDER_DETAIL,
+        element: <OrderDetailView />,
+      },
+      {
+        path: PATH.CART_LIST,
+        element: <CartListView />,
       },
     ],
   },

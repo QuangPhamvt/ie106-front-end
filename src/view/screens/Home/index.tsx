@@ -31,13 +31,18 @@ const HomeView: React.FC = () => {
       </div>
       <ListPostComponent />
 
-      <div className='w-screen h-[27rem] flex flex-col justify-center items-center space-y-4 bg-[#4848A4] text-white'>
-        <p className='mt-8 text-6xl font-medium'>HÃY ĐẾN CỬA HÀNG CỦA CHÚNG TÔI</p>
-        <p className='text-2xl font-medium'>Khu phố 6, P.Linh Trung, Tp.Thủ Đức, Tp.Hồ Chí Minh</p>
-        <div className='flex items-center justify-center py-4'>
-          <button className='w-[15.75rem] py-2 border-[2px] border-solid border-white rounded-3xl text-white font-medium'>
-            Tìm hiểu thêm
-          </button>
+      <div
+        style={{ backgroundImage: 'url(https://customafk.s3.ap-southeast-1.amazonaws.com/IE106/header-expect.png)' }}
+        className='w-screen h-[27rem] flex flex-col justify-center items-center space-y-4 bg-[#4848A4] text-white'
+      >
+        <div className='w-screen h-full flex flex-col justify-center items-center space-y-4 bg-[#4848A4]/60 text-white'>
+          <p className='mt-8 text-6xl font-medium'>HÃY ĐẾN CỬA HÀNG CỦA CHÚNG TÔI</p>
+          <p className='text-2xl font-medium'>Khu phố 6, P.Linh Trung, Tp.Thủ Đức, Tp.Hồ Chí Minh</p>
+          <div className='flex items-center justify-center py-4'>
+            <button className='w-[15.75rem] py-2 border-[2px] border-solid border-white rounded-3xl text-white font-medium'>
+              Tìm hiểu thêm
+            </button>
+          </div>
         </div>
       </div>
     </article>

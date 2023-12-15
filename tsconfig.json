@@ -9,6 +9,7 @@
       "@/*": ["./src/*"],
       "@/constant": ["./src/utilities/*"]
     },
+    "types": ["vite-plugin-svgr/client"],
 
     /* Bundler mode */
     "moduleResolution": "bundler",

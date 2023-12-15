@@ -3,12 +3,22 @@ import { useNavigate } from 'react-router-dom'
 export const LeftNavHeaderLayoutComponent = () => {
   const navigate = useNavigate()
   return (
-    <section className='flex flex-row space-x-[20px] text-white h-16 py-1.5 justify-center items-center px-1.5'>
-      <div onClick={() => navigate('/home')} className='w-32 text-xl font-medium text-center '>
-        Trang chủ
+    <section className='flex flex-row text-white h-16 justify-center items-center px-1.5'>
+      <div
+        onClick={() => navigate('/home')}
+        className='w-44 hover:cursor-pointer h-full px-4 text-xl font-medium text-center  hover:bg-[#2F2F86]/60 flex items-center justify-center'
+      >
+        <p>Trang chủ</p>
       </div>
-      <div className='w-32 text-xl font-medium text-center'>Về chúng tôi</div>
-      <div className='w-32 text-xl font-medium text-center'>Liên hệ</div>
+      <div
+        onClick={() => navigate('/about')}
+        className='w-44 px-4 h-full text-xl hover:cursor-pointer font-medium text-center  hover:bg-[#2F2F86]/60 flex items-center justify-center'
+      >
+        Về chúng tôi
+      </div>
+      <div className='w-44 px-4 h-full text-xl font-medium text-center hover:cursor-pointer  hover:bg-[#2F2F86]/60 flex items-center justify-center'>
+        Liên hệ
+      </div>
     </section>
   )
 }
