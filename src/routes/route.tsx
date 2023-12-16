@@ -1,17 +1,26 @@
-import { createBrowserRouter } from 'react-router-dom'
+/* eslint-disable react-refresh/only-export-components */
+import React from 'react'
 import { PATH } from './PATH'
-import {
-  LogInView,
-  Layout,
-  HomeView,
-  SignUpView,
-  CardDetailView,
-  AboutView,
-  OrderDetailView,
-  CartListView,
-} from '@/view'
+import { HomeView, CardDetailView, AboutView, OrderDetailView, CartListView } from '@/view'
+import withSuspense from '@/HOC/withSuspense'
+import LoadingScreen from '@/view/screens/LoadingScreen'
+import UserDetail from '@/view/screens/UserDetail'
+import { RouteObject } from 'react-router-dom'
 
-const router = createBrowserRouter([
+const Layout = withSuspense(
+  React.lazy(() => import('@/view/Layout')),
+  <LoadingScreen />,
+)
+const LogInView = withSuspense(
+  React.lazy(() => import('@/view/screens/LogIn')),
+  <LoadingScreen />,
+)
+const SignUpView = withSuspense(
+  React.lazy(() => import('@/view/screens/SignUp')),
+  <LoadingScreen />,
+)
+
+export const routes: RouteObject[] = [
   {
     path: PATH.AUTH,
     element: <Layout />,
@@ -36,6 +45,10 @@ const router = createBrowserRouter([
         path: PATH.CART_LIST,
         element: <CartListView />,
       },
+      {
+        path: PATH.USER_DETAIL,
+        element: <UserDetail />,
+      },
     ],
   },
   {
@@ -46,6 +59,4 @@ const router = createBrowserRouter([
     path: PATH.SIGN_UP,
     element: <SignUpView />,
   },
-])
-
-export default router
+]

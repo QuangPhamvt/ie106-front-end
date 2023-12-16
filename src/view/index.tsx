@@ -1,7 +1,4 @@
-export { default as Layout } from './Layout'
 export { default as HomeView } from './screens/Home'
-export { default as SignUpView } from './screens/SignUp'
-export { default as LogInView } from './screens/LogIn'
 export { default as CardDetailView } from './screens/CardDetail'
 export { default as AboutView } from './screens/About'
 export { default as OrderDetailView } from './screens/OrderDetail'

@@ -1,4 +1,7 @@
 import { useNavigate } from 'react-router-dom'
+import UserDetailHeaderComponent from '../userDropDownComponent'
+import { useRecoilValue } from 'recoil'
+import { logInState } from '@/view/screens/LogIn/store/atom'
 
 export const LeftNavHeaderLayoutComponent = () => {
   const navigate = useNavigate()
@@ -24,14 +27,20 @@ export const LeftNavHeaderLayoutComponent = () => {
 }
 export const RightNavHeaderLayoutComponent = () => {
   const navigate = useNavigate()
+  const logIn = useRecoilValue(logInState)
   return (
     <section className='flex flex-row text-white py-2.5 justify-center items-center px-1.5'>
-      <div onClick={() => navigate('/login')} className='w-32 text-xl font-medium text-center'>
-        Đăng ký
-      </div>
-      <div onClick={() => navigate('/signup')} className='w-32 text-xl font-medium text-center'>
-        Đăng nhập
-      </div>
+      {logIn.state === 'hasValue' && <UserDetailHeaderComponent />}
+      {logIn.state !== 'hasValue' && (
+        <>
+          <div onClick={() => navigate('/login')} className='w-32 text-xl font-medium text-center'>
+            Đăng nhập
+          </div>
+          <div onClick={() => navigate('/signup')} className='w-32 text-xl font-medium text-center'>
+            Đăng ký
+          </div>
+        </>
+      )}
     </section>
   )
 }

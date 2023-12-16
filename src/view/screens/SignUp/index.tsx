@@ -50,7 +50,7 @@ const SignUpView: React.FC = () => {
           </div>
           <div className='flex flex-row justify-center text-2xl'>
             Đã có tài khoản? &nbsp;{' '}
-            <p onClick={() => navigate('/login')} className='text-[#000080] font-bold'>
+            <p onClick={() => navigate('/login')} className='text-[#000080] font-bold hover:cursor-pointer'>
               Đăng nhập ngay
             </p>
           </div>
