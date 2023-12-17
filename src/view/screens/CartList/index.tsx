@@ -1,6 +1,8 @@
 import React from 'react'
+import { useNavigate } from 'react-router-dom'
 
 const CartListView: React.FC = () => {
+  const navigation = useNavigate()
   return (
     <>
       <div className='container flex flex-col py-8 mx-auto'>
@@ -18,7 +20,7 @@ const CartListView: React.FC = () => {
       </div>
 
       <div className='container flex flex-col py-12 mx-auto px-52 border-b-[0.5px] border-solid border-gray-500 '>
-        <div className='flex flex-row items-center space-x-4 text-2xl '>
+        <div className='flex flex-row items-center space-x-4 text-xl font-light '>
           <div className='flex flex-row items-center w-2/5 space-x-6'>
             <input type='checkbox' className='border-solid border-[2px] border-black h-6 w-6 rounded-lg' />
             <div className='w-16 h-20 bg-gray-600' />
@@ -36,7 +38,7 @@ const CartListView: React.FC = () => {
       </div>
 
       <div className='container flex flex-col py-12 mx-auto px-52 border-b-[0.5px] border-solid border-gray-500 '>
-        <div className='flex flex-row items-center space-x-4 text-2xl '>
+        <div className='flex flex-row items-center space-x-4 text-xl font-light '>
           <div className='flex flex-row items-center w-2/5 space-x-6'>
             <input type='checkbox' className='border-solid border-[2px] border-black h-6 w-6 rounded-lg' />
             <div className='w-16 h-20 bg-gray-600' />
@@ -59,7 +61,12 @@ const CartListView: React.FC = () => {
           <div className='text-[#003499]'>566.666d</div>
         </div>
         <div className=''>
-          <button className='py-4 bg-[#003499] px-12 rounded-xl text-white'>THANH TOÁN</button>
+          <button
+            onClick={() => navigation('/checkout')}
+            className='py-4 bg-[#003499] px-16 rounded-xl text-[26px] text-white font-bold'
+          >
+            THANH TOÁN
+          </button>
         </div>
       </div>
     </>

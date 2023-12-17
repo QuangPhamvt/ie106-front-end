@@ -1,26 +1,26 @@
 import React from 'react'
 const ListPostComponent: React.FC = () => {
   return (
-    <div className='flex flex-col w-screen space-y-4'>
+    <div className='flex flex-col w-screen space-y-4 '>
       <div className='w-full py-8 mx-16 text-4xl'>DANH MỤC SẢN PHẨM</div>
-      <div className='flex flex-row justify-center space-x-14'>
-        <div className='py-2 rounded-lg border-2 border-solid border-[#4848A4] h-40 w-48 flex flex-col items-center'>
+      <div className='flex flex-row flex-wrap justify-around px-20 2xl:px-48'>
+        <div className='py-2 rounded-lg border-2 border-solid 2xl:mt-0 mt-4 border-[#4848A4] h-40 w-48 flex flex-col items-center item-content-hidden item '>
           <div className='w-12 bg-gray-300 grow'></div>
           <div className='text-[#4848A4]'>BOX SET</div>
         </div>
-        <div className='py-2 rounded-lg border-2 border-solid border-[#4848A4] h-40 w-48 flex flex-col items-center'>
+        <div className='py-2 rounded-lg border-2 border-solid 2xl:mt-0 mt-4 border-[#4848A4] h-40 w-48 flex flex-col items-center item-content-hidden item'>
           <div className='w-12 bg-gray-300 grow'></div>
           <div className='text-[#4848A4]'>BOX SET</div>
         </div>
-        <div className='py-2 rounded-lg border-2 border-solid border-[#4848A4] h-40 w-48 flex flex-col items-center'>
+        <div className='py-2 rounded-lg border-2 border-solid 2xl:mt-0 mt-4 border-[#4848A4] h-40 w-48 flex flex-col items-center item-content-hidden item'>
           <div className='w-12 bg-gray-300 grow'></div>
           <div className='text-[#4848A4]'>BOX SET</div>
         </div>
-        <div className='py-2 rounded-lg border-2 border-solid border-[#4848A4] h-40 w-48 flex flex-col items-center'>
+        <div className='py-2 rounded-lg border-2 border-solid 2xl:mt-0 mt-4 border-[#4848A4] h-40 w-48 flex flex-col items-center item-content-hidden item'>
           <div className='w-12 bg-gray-300 grow'></div>
           <div className='text-[#4848A4]'>BOX SET</div>
         </div>
-        <div className='py-2 rounded-lg border-2 border-solid border-[#4848A4] h-40 w-48 flex flex-col items-center'>
+        <div className='py-2 rounded-lg border-2 border-solid 2xl:mt-0 mt-4 border-[#4848A4] h-40 w-48 flex flex-col items-center item-content-hidden item'>
           <div className='w-12 bg-gray-300 grow'></div>
           <div className='text-[#4848A4]'>BOX SET</div>
         </div>

@@ -1,4 +1,4 @@
-import { TState } from '@/view/utilities'
+import { TState } from '@/utilities'
 import { atom } from 'recoil'
 
 type TLogInFormState = {

@@ -5,7 +5,7 @@ const ItemPostComponent: React.FC = () => {
   return (
     <div
       onClick={() => navigate('/product')}
-      className=' w-[14.75rem] flex flex-col items-center hover:shadow-2xl hover:cursor-pointer'
+      className='md:w-[20rem] lg:w-[14.75rem] w-[24rem] flex flex-col items-center hover:shadow-2xl hover:cursor-pointer mb-4 item-content-hidden-right item'
     >
       <div className='w-full h-[23.5rem] bg-gray-300'></div>
       <div className='px-4 py-2 text-xl text-center'>Tên sách (bản thường) - Tên tác giả</div>
@@ -15,7 +15,7 @@ const ItemPostComponent: React.FC = () => {
 }
 const ListPostComponent: React.FC = () => {
   return (
-    <div className='container flex flex-row justify-around px-8 mx-auto'>
+    <div className='container flex flex-row flex-wrap justify-around px-8 mx-auto '>
       <ItemPostComponent />
       <ItemPostComponent />
       <ItemPostComponent />

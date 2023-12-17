@@ -2,7 +2,7 @@
 import { useRecoilValue, useResetRecoilState, useSetRecoilState } from 'recoil'
 import { logInFormState, logInState } from './atom'
 import { userFake } from '@/mockData/user'
-import { timeout, validateEmail } from '@/view/utilities'
+import { timeout, validateEmail } from '@/utilities'
 import { useNavigate } from 'react-router-dom'
 
 export const useLogIn = () => {
