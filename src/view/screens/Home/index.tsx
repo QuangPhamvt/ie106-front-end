@@ -6,6 +6,23 @@ import * as Icon from 'react-icons/fa'
 import ListPostComponent from './component/ListPostComponent'
 
 const HomeView: React.FC = () => {
+  React.useEffect(() => {
+    const observer = new IntersectionObserver((entries) => {
+      console.log(entries)
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('item-content-show')
+        } else {
+          entry.target.classList.remove('item-content-show')
+        }
+      })
+    })
+    const hiddenElements = document.querySelectorAll('.item-content-hidden')
+    const hiddenElementsRight = document.querySelectorAll('.item-content-hidden-right')
+    hiddenElements.forEach((el) => observer.observe(el))
+    hiddenElementsRight.forEach((el) => observer.observe(el))
+  }, [])
+
   return (
     <article className='flex flex-col'>
       <HeaderHomeComponent />

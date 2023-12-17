@@ -1,4 +1,3 @@
-/* eslint-disable react-refresh/only-export-components */
 import React from 'react'
 import { PATH } from './PATH'
 import { HomeView, CardDetailView, AboutView, OrderDetailView, CartListView } from '@/view'
@@ -6,6 +5,7 @@ import withSuspense from '@/HOC/withSuspense'
 import LoadingScreen from '@/view/screens/LoadingScreen'
 import UserDetail from '@/view/screens/UserDetail'
 import { RouteObject } from 'react-router-dom'
+import CheckoutView from '@/view/screens/Checkout'
 
 const Layout = withSuspense(
   React.lazy(() => import('@/view/Layout')),
@@ -25,6 +25,10 @@ export const routes: RouteObject[] = [
     path: PATH.AUTH,
     element: <Layout />,
     children: [
+      {
+        path: PATH.AUTH,
+        element: <HomeView />,
+      },
       {
         path: PATH.HOME,
         element: <HomeView />,
@@ -48,6 +52,10 @@ export const routes: RouteObject[] = [
       {
         path: PATH.USER_DETAIL,
         element: <UserDetail />,
+      },
+      {
+        path: PATH.CHECKOUT,
+        element: <CheckoutView />,
       },
     ],
   },

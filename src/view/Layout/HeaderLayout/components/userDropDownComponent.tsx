@@ -14,11 +14,11 @@ const UserDropDownComponent: React.FC = () => {
       style={{
         top: 60,
         right: 16,
-        zIndex: 10000,
+        zIndex: 90000,
       }}
-      className='absolute z-50 w-40  bg-white rounded-md  border-[0.5px] shadow-2xl animate-fade-down animate-duration-500'
+      className='absolute  w-40  bg-white rounded-md  border-[0.5px] shadow-2xl animate-fade-down animate-duration-500'
     >
-      <div className='flex flex-col items-start text-black'>
+      <div style={{ zIndex: 90000 }} className='flex flex-col items-start text-black '>
         <div className='w-full hover:bg-zinc-200'>
           <button
             onClick={(event) => {

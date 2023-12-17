@@ -9,4 +9,5 @@ export const PATH = {
   ORDER_DETAIL: '/order',
   CART_LIST: '/cart',
   USER_DETAIL: '/user',
+  CHECKOUT: '/checkout',
 }

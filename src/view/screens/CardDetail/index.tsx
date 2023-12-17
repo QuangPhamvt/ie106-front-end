@@ -4,16 +4,16 @@ import { InfoCartDetailComponent } from './components/InfoCartDetailComponent'
 const CardDetailView: React.FC = () => {
   const [isShowMoreText, setIsShowMoreText] = React.useState<boolean>(false)
   return (
-    <div className='container flex flex-row p-10 mx-auto space-x-10'>
+    <div className='container flex flex-row flex-wrap justify-center p-10 mx-auto '>
       <div className='flex flex-col p-5 border-[1px] border-[#4848A4] rounded-lg h-fit'>
-        <div className='flex flex-col p-5 space-y-5 '>
-          <div className='h-[37rem] w-[37rem] aspect-square bg-gray-300 border-[1px] border-[#4848A4] rounded-lg'></div>
-          <div className='flex flex-row justify-between w-[37rem] h-[6.25rem]'>
-            <div className='h-[6.25rem] w-[6.25rem] aspect-square bg-slate-400 border-[1px] border-[#4848A4] rounded-lg'></div>
-            <div className='h-[6.25rem] w-[6.25rem] aspect-square bg-slate-400 border-[1px] border-[#4848A4] rounded-lg'></div>
-            <div className='h-[6.25rem] w-[6.25rem] aspect-square bg-slate-400 border-[1px] border-[#4848A4] rounded-lg'></div>
-            <div className='h-[6.25rem] w-[6.25rem] aspect-square bg-slate-400 border-[1px] border-[#4848A4] rounded-lg'></div>
-            <div className='h-[6.25rem] w-[6.25rem] aspect-square bg-slate-400 border-[1px] border-[#4848A4] rounded-lg'></div>
+        <div className='flex flex-col items-center p-5 space-y-5'>
+          <div className='2xl:h-[37rem] 2xl:w-[37rem] h-[32rem] w-[32rem] aspect-square bg-gray-300 border-[1px] border-[#4848A4] rounded-lg'></div>
+          <div className='flex flex-row justify-between 2xl:w-[37rem] w-[32rem] h-[6.25rem]'>
+            <div className='2xl:h-[6.25rem] 2xl:w-[6.25rem] w-[5rem] h-[5rem] aspect-square bg-slate-400 border-[1px] border-[#4848A4] rounded-lg'></div>
+            <div className='2xl:h-[6.25rem] 2xl:w-[6.25rem] w-[5rem] h-[5rem] aspect-square bg-slate-400 border-[1px] border-[#4848A4] rounded-lg'></div>
+            <div className='2xl:h-[6.25rem] 2xl:w-[6.25rem] w-[5rem] h-[5rem] aspect-square bg-slate-400 border-[1px] border-[#4848A4] rounded-lg'></div>
+            <div className='2xl:h-[6.25rem] 2xl:w-[6.25rem] w-[5rem] h-[5rem] aspect-square bg-slate-400 border-[1px] border-[#4848A4] rounded-lg'></div>
+            <div className='2xl:h-[6.25rem] 2xl:w-[6.25rem] w-[5rem] h-[5rem] aspect-square bg-slate-400 border-[1px] border-[#4848A4] rounded-lg'></div>
           </div>
           <div className='flex flex-col space-y-5 text-xl w-[28.625rem] px-5 font-light'>
             <p className='text-xl text-[#4848A4] font-bold'>Đặc điểm nổi bật</p>
@@ -33,7 +33,7 @@ const CardDetailView: React.FC = () => {
         </div>
       </div>
 
-      <div className='flex flex-col px-10 space-y-5'>
+      <div className='flex flex-col px-10 mt-6 space-y-5 2xl:mt-0'>
         <div className='w-[640px] flex flex-col border-[1px] border-solid border-[#4848A4] rounded-lg p-4 space-y-4'>
           <p className='text-[32px] font-bold text-[#4848A4]'>Thiên sứ nhà bên - Tập 7 - Bản Giới Hạn</p>
           <p className='text-4xl font-bold text-[#FF424E]'>90.000đ</p>
@@ -64,7 +64,7 @@ const CardDetailView: React.FC = () => {
 
         <div className='w-[640px] flex flex-col border-[1px] border-solid border-[#4848A4] rounded-lg p-4 space-y-4'>
           <div className='flex flex-col w-full space-y-2 text-xl font-bold text-[#4848A4]'>
-            <p className='text-3xl font-bold text-[#4848A4]'>Mô tả sản phẩm</p>
+            <p className='text-2xl font-bold text-[#4848A4]'>Mô tả sản phẩm</p>
             <div className='w-full border-b-[1px] border-black border-solid h-[1px]' content='' />
           </div>
           <p className={`text-xl font-light ${!isShowMoreText ? 'line-clamp-3' : 'animate-fade-down'}`}>
