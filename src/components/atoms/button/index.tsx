@@ -11,10 +11,11 @@ export interface ButtonProps extends React.ComponentProps<'button'> {
 const outlinedVariant = `border-[1px] border-solid font-medium border-[#4848A4] bg-white text-[#4848A4]`
 const containedVariant = `bg-[#4848A4] text-white font-medium`
 export const Button: React.FC<Partial<ButtonProps>> = (props) => {
-  const { width = '240px', height = '40px', padding_x, padding_y, variant, rounded = 'md', children } = props
+  const { width = '240px', height = '40px', padding_x, padding_y, variant, rounded = 'md', children, onClick } = props
 
   return (
     <button
+      onClick={onClick}
       style={{
         width,
         height,

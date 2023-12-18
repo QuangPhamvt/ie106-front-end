@@ -1,7 +1,8 @@
 import { useNavigate } from 'react-router-dom'
 import UserDetailHeaderComponent from '../userDropDownComponent'
-import { useRecoilValue } from 'recoil'
+import { useRecoilState } from 'recoil'
 import { logInState } from '@/view/screens/LogIn/store/atom'
+import React from 'react'
 
 export const LeftNavHeaderLayoutComponent = () => {
   const navigate = useNavigate()
@@ -30,7 +31,11 @@ export const LeftNavHeaderLayoutComponent = () => {
 }
 export const RightNavHeaderLayoutComponent = () => {
   const navigate = useNavigate()
-  const logIn = useRecoilValue(logInState)
+  const [logIn, setLogIn] = useRecoilState(logInState)
+  React.useEffect(() => {
+    const user = localStorage.getItem('user')
+    if (user && JSON.parse(user).username === 'username') setLogIn({ state: 'hasValue', message: null })
+  }, [logIn.state])
   return (
     <section className='flex flex-row text-white py-2.5 justify-center items-center px-1.5 animate-fade-left'>
       {logIn.state === 'hasValue' && <UserDetailHeaderComponent />}

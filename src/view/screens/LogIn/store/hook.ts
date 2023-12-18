@@ -17,6 +17,7 @@ export const useLogIn = () => {
       if (logInForm.email === userFake.email && logInForm.password === userFake.password) {
         setLogIn({ state: 'hasValue', message: 'Successfully' })
         navigate('/home')
+        localStorage.setItem('user', JSON.stringify({ username: 'username' }))
       } else if (!validateEmail(logInForm.email)) throw { message: 'Email is not validate' }
       else if (!logInForm.email || !logInForm.password) throw { message: 'Email or password is empty' }
       else throw { message: 'Email is not exist or password is wrong' }

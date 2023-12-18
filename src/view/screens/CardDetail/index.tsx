@@ -7,13 +7,29 @@ const CardDetailView: React.FC = () => {
     <div className='container flex flex-row flex-wrap justify-center p-10 mx-auto '>
       <div className='flex flex-col p-5 border-[1px] border-[#4848A4] rounded-lg h-fit'>
         <div className='flex flex-col items-center p-5 space-y-5'>
-          <div className='2xl:h-[37rem] 2xl:w-[37rem] h-[32rem] w-[32rem] aspect-square bg-gray-300 border-[1px] border-[#4848A4] rounded-lg'></div>
+          <div className='2xl:h-[37rem] 2xl:w-[37rem] h-[32rem] w-[32rem] aspect-square bg-gray-300 border-[1px] border-[#4848A4] rounded-lg'>
+            <img
+              src='https://customafk.s3.ap-southeast-1.amazonaws.com/IE106/test-order.png'
+              className='w-full aspect-square'
+              alt=''
+            />
+          </div>
           <div className='flex flex-row justify-between 2xl:w-[37rem] w-[32rem] h-[6.25rem]'>
-            <div className='2xl:h-[6.25rem] 2xl:w-[6.25rem] w-[5rem] h-[5rem] aspect-square bg-slate-400 border-[1px] border-[#4848A4] rounded-lg'></div>
-            <div className='2xl:h-[6.25rem] 2xl:w-[6.25rem] w-[5rem] h-[5rem] aspect-square bg-slate-400 border-[1px] border-[#4848A4] rounded-lg'></div>
-            <div className='2xl:h-[6.25rem] 2xl:w-[6.25rem] w-[5rem] h-[5rem] aspect-square bg-slate-400 border-[1px] border-[#4848A4] rounded-lg'></div>
-            <div className='2xl:h-[6.25rem] 2xl:w-[6.25rem] w-[5rem] h-[5rem] aspect-square bg-slate-400 border-[1px] border-[#4848A4] rounded-lg'></div>
-            <div className='2xl:h-[6.25rem] 2xl:w-[6.25rem] w-[5rem] h-[5rem] aspect-square bg-slate-400 border-[1px] border-[#4848A4] rounded-lg'></div>
+            <div className='2xl:h-[6.25rem] 2xl:w-[6.25rem] w-[5rem] h-[5rem] aspect-square bg-slate-400 border-[1px] border-[#4848A4] rounded-lg overflow-hidden'>
+              <img src='https://customafk.s3.ap-southeast-1.amazonaws.com/IE106/test-order.png' alt='' />
+            </div>
+            <div className='2xl:h-[6.25rem] 2xl:w-[6.25rem] w-[5rem] h-[5rem] aspect-square bg-slate-400 border-[1px] border-[#4848A4] rounded-lg overflow-hidden'>
+              <img src='https://customafk.s3.ap-southeast-1.amazonaws.com/IE106/test-order.png' alt='' />
+            </div>
+            <div className='2xl:h-[6.25rem] 2xl:w-[6.25rem] w-[5rem] h-[5rem] aspect-square bg-slate-400 border-[1px] border-[#4848A4] rounded-lg overflow-hidden'>
+              <img src='https://customafk.s3.ap-southeast-1.amazonaws.com/IE106/test-order.png' alt='' />
+            </div>
+            <div className='2xl:h-[6.25rem] 2xl:w-[6.25rem] w-[5rem] h-[5rem] aspect-square bg-slate-400 border-[1px] border-[#4848A4] rounded-lg overflow-hidden'>
+              <img src='https://customafk.s3.ap-southeast-1.amazonaws.com/IE106/test-order.png' alt='' />
+            </div>
+            <div className='2xl:h-[6.25rem] 2xl:w-[6.25rem] w-[5rem] h-[5rem] aspect-square bg-slate-400 border-[1px] border-[#4848A4] rounded-lg overflow-hidden'>
+              <img src='https://customafk.s3.ap-southeast-1.amazonaws.com/IE106/test-order.png' alt='' />
+            </div>
           </div>
           <div className='flex flex-col space-y-5 text-xl w-[28.625rem] px-5 font-light'>
             <p className='text-xl text-[#4848A4] font-bold'>Đặc điểm nổi bật</p>
