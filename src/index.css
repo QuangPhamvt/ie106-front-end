@@ -15,13 +15,17 @@
     opacity: 0;
     filter: blur(5px);
     transform: translateX(-100%);
-    transition: all 1s ease-in-out;
+    transition-property: opacity, filter, transform;
+    transition-duration: 1s;
+    transition-timing-function: ease-in-out;
   }
   .item-content-hidden-right {
     opacity: 0;
     filter: blur(5px);
     transform: translateX(100%);
-    transition: all 1s ease-in-out;
+    transition-property: opacity, filter, transform;
+    transition-duration: 1s;
+    transition-timing-function: ease-in-out;
   }
   .item-content-show {
     filter: blur(0);

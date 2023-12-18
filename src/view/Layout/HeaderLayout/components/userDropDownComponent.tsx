@@ -4,10 +4,12 @@ import { useRecoilState, useSetRecoilState } from 'recoil'
 import { dropDownUserDetailHeaderAtom } from '../store/atom'
 import { FaChevronDown, FaRegUserCircle } from 'react-icons/fa'
 import { useNavigate } from 'react-router-dom'
+import { logInState } from '@/view/screens/LogIn/store/atom'
 
 const UserDropDownComponent: React.FC = () => {
   const navigate = useNavigate()
   const [openDropDown, setOpenDropDown] = useRecoilState(dropDownUserDetailHeaderAtom)
+  const setLogIn = useSetRecoilState(logInState)
   return (
     <section
       hidden={openDropDown.open === false}
@@ -44,7 +46,14 @@ const UserDropDownComponent: React.FC = () => {
           </button>
         </div>
         <div className='w-full hover:bg-zinc-200'>
-          <button className='px-4 py-2 font-normal text-[#4848A4] border-gray-400 border-solid rounded '>
+          <button
+            onClick={(event) => {
+              event.preventDefault()
+              localStorage.removeItem('user')
+              setLogIn({ state: 'idle', message: null })
+            }}
+            className='px-4 py-2 font-normal text-[#4848A4] border-gray-400 border-solid rounded '
+          >
             Đăng xuất
           </button>
         </div>

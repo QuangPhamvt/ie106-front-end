@@ -2,6 +2,7 @@ import React from 'react'
 import { FaPlus } from 'react-icons/fa6'
 import { GrSubtract } from 'react-icons/gr'
 import { Button } from '@/components/atoms/button'
+import { useNavigate } from 'react-router-dom'
 
 interface QuantityInfoCartDetailComponentProps {
   quantity: number
@@ -49,12 +50,30 @@ export const PriceInfoCartDetailComponent: React.FC<PriceInfoCartDetailComponent
   )
 }
 export const ButtonInfoCartDetailComponent = () => {
+  const navigate = useNavigate()
   return (
     <section className='flex flex-row items-center justify-center space-x-4 w-full p-[10px]'>
-      <Button variant='contained' width={'240px'} height='40px'>
+      <Button
+        onClick={(event) => {
+          event.preventDefault()
+          navigate('/checkout')
+        }}
+        variant='contained'
+        width={'240px'}
+        height='40px'
+      >
         Mua Ngay
       </Button>
-      <Button width={'240px'} height={'40px'} variant={'outlined'} rounded={'md'}>
+      <Button
+        onClick={(event) => {
+          event.preventDefault()
+          navigate('/cart')
+        }}
+        width={'240px'}
+        height={'40px'}
+        variant={'outlined'}
+        rounded={'md'}
+      >
         Thêm vào giỏ hàng
       </Button>
     </section>

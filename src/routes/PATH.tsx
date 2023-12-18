@@ -10,4 +10,6 @@ export const PATH = {
   CART_LIST: '/cart',
   USER_DETAIL: '/user',
   CHECKOUT: '/checkout',
+  SEARCH: '/search',
+  ORIGIN_CART_DETAIL: '/origin-cart-detail',
 }

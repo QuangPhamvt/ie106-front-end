@@ -2,27 +2,10 @@ import React from 'react'
 import { HeaderHomeComponent } from './component/HeaderHomeComponent'
 import { NewBookHomeComponent } from './component'
 import BestSellerComponent from './component/BestSellerComponent'
-import * as Icon from 'react-icons/fa'
+import { FaBookOpen, FaPager, FaTruckMonster } from 'react-icons/fa'
 import ListPostComponent from './component/ListPostComponent'
 
 const HomeView: React.FC = () => {
-  React.useEffect(() => {
-    const observer = new IntersectionObserver((entries) => {
-      console.log(entries)
-      entries.forEach((entry) => {
-        if (entry.isIntersecting) {
-          entry.target.classList.add('item-content-show')
-        } else {
-          entry.target.classList.remove('item-content-show')
-        }
-      })
-    })
-    const hiddenElements = document.querySelectorAll('.item-content-hidden')
-    const hiddenElementsRight = document.querySelectorAll('.item-content-hidden-right')
-    hiddenElements.forEach((el) => observer.observe(el))
-    hiddenElementsRight.forEach((el) => observer.observe(el))
-  }, [])
-
   return (
     <article className='flex flex-col'>
       <HeaderHomeComponent />
@@ -33,15 +16,15 @@ const HomeView: React.FC = () => {
         <p className='text-4xl font-medium text-white'>BANU STORE - TIỆM SÁCH CỦA BẠN</p>
         <div className='flex flex-row space-x-36'>
           <div className='flex flex-col items-center space-y-4 w-52'>
-            <Icon.FaTruckMonster size={120} color={'white'} />
+            <FaTruckMonster size={120} color={'white'} />
             <p className='text-2xl text-center text-white'>Vân chuyển nhanh chóng</p>
           </div>
           <div className='flex flex-col items-center space-y-4 w-52'>
-            <Icon.FaPager size={120} color={'white'} />
+            <FaPager size={120} color={'white'} />
             <p className='text-2xl text-center text-white'>Khuyến mãi hấp dẫn</p>
           </div>
           <div className='flex flex-col items-center space-y-4 w-52'>
-            <Icon.FaBookOpen size={120} color={'white'} />
+            <FaBookOpen size={120} color={'white'} />
             <p className='text-2xl text-center text-white'>Sách truyện phong phú</p>
           </div>
         </div>

@@ -23,7 +23,9 @@ const CartListView: React.FC = () => {
         <div className='flex flex-row items-center space-x-4 text-xl font-light '>
           <div className='flex flex-row items-center w-2/5 space-x-6'>
             <input type='checkbox' className='border-solid border-[2px] border-black h-6 w-6 rounded-lg' />
-            <div className='w-16 h-20 bg-gray-600' />
+            <div className='w-16 h-20 '>
+              <img src='https://customafk.s3.ap-southeast-1.amazonaws.com/IE106/origin-1.png' alt='' />
+            </div>
             <p>Chàng Băng Giá Và Nàng Lạnh Lùng - 3</p>
           </div>
           <div className='w-1/5 text-center'>
@@ -41,7 +43,9 @@ const CartListView: React.FC = () => {
         <div className='flex flex-row items-center space-x-4 text-xl font-light '>
           <div className='flex flex-row items-center w-2/5 space-x-6'>
             <input type='checkbox' className='border-solid border-[2px] border-black h-6 w-6 rounded-lg' />
-            <div className='w-16 h-20 bg-gray-600' />
+            <div className='w-16 h-20 '>
+              <img src='https://customafk.s3.ap-southeast-1.amazonaws.com/IE106/origin-2.png' alt='' />
+            </div>
             <p>Skip and Loafer - Nhịp Bước Tuổi Xanh - 1</p>
           </div>
           <div className='w-1/5 text-center'>
