@@ -40,7 +40,9 @@ const HomeView: React.FC = () => {
           <p className='text-2xl font-medium'>Khu phố 6, P.Linh Trung, Tp.Thủ Đức, Tp.Hồ Chí Minh</p>
           <div className='flex items-center justify-center py-4'>
             <button className='w-[15.75rem] py-2 border-[2px] border-solid border-white rounded-3xl text-white font-medium'>
-              Tìm hiểu thêm
+              <a href='https://oven.sh/' target='_blank'>
+                Tìm hiểu thêm
+              </a>
             </button>
           </div>
         </div>
