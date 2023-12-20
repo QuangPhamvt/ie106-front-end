@@ -33,22 +33,30 @@ const FooterLayout: React.FC = () => {
 
           <div className='font-[350] flex pl-8 items-center space-x-2'>
             <FiFacebook size={'32px'} />
-            <p>Facebook</p>
+            <a href='https://www.facebook.com/customafk' target='_blank'>
+              Facebook
+            </a>
           </div>
 
           <div className='font-[350] flex pl-8 items-center space-x-2'>
             <FiInstagram size={'32px'} />
-            <p>Instagram</p>
+            <a href='https://www.Instagram.com' target='_blank'>
+              Instagram
+            </a>
           </div>
 
           <div className='font-[350] flex pl-8 items-center space-x-2'>
             <FiTwitter size={'32px'} />
-            <p>Twitter</p>
+            <a href='https://twitter.com/' target='_blank'>
+              Twitter
+            </a>
           </div>
 
           <div className='font-[350] flex pl-8 items-center space-x-2'>
             <FiYoutube size={'32px'} />
-            <p>Youtube</p>
+            <a href='https://www.youtube.com/channel/UCmsM9BU8R7Wh5uVE242CKmw' target='_blank'>
+              Youtube
+            </a>
           </div>
         </div>
       </div>

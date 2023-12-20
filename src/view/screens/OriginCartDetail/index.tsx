@@ -1,6 +1,8 @@
 import React from 'react'
+import { useNavigate } from 'react-router-dom'
 
 const OriginCartDetail: React.FC = () => {
+  const navigate = useNavigate()
   return (
     <div className='container mx-auto p-2.5 flex flex-col justify-center items-center space-y-[1.625rem] w-[80rem]'>
       <div className='flex flex-col w-full px-4 py-2 space-y-2 shadow-xl border-[0.5px] border-solid border-gray-300'>
@@ -91,7 +93,10 @@ const OriginCartDetail: React.FC = () => {
         </div>
       </div>
       <div className='flex items-center justify-center w-full '>
-        <button className='border-solid border-[1px] border-[#4848A4] p-3 rounded-lg font-[450] text-[#4848a4]'>
+        <button
+          onClick={() => navigate('/order')}
+          className='border-solid border-[1px] border-[#4848A4] p-3 rounded-lg font-[450] text-[#4848a4]'
+        >
           Xem danh sách đơn hàng
         </button>
       </div>
