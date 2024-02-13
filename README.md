@@ -1,5 +1,13 @@
 # IE106-FE - User Interface Design 
 
+<div align="center">
+   <img src="Project/Images/Homepage.png" alt="Banu Store Homepage""/>
+</div>
+
+<div align="center">
+   Banu Store
+</div>
+
 ## React + TypeScript + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
