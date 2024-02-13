@@ -8,7 +8,17 @@
    Banu Store
 </div>
 
-## React + TypeScript + Vite
+## Table of Contents
+### Introduction
+### Chapter 1: Survey, analysis, and reference
+### Chapter 2: Interface design
+### Chapter 3: Complete website interface
+### Chapter 4: Interface interaction
+### Chapter 5: Conclusion
+### REFERENCES
+
+## Technology
+### React + TypeScript + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
@@ -17,7 +27,7 @@ Currently, two official plugins are available:
 - [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
 - [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
 
-### Expanding the ESLint configuration
+#### Expanding the ESLint configuration
 
 If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
 
