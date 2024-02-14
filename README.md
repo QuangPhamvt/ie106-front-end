@@ -24,7 +24,7 @@
 
 ## Technology
 <a href="https://skillicons.dev">
-<img src="https://skillicons.dev/icons?i=html,css,js,linux,git,github,react,nodejs,vscode,figma,typescript,vite&perline=6" />
+<img src="https://skillicons.dev/icons?i=html,css,js,typescript,vite,react,nodejs,vscode,linux,git,github,figma&perline=6" />
 </a>
 
 ### React + TypeScript + Vite
