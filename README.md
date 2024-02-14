@@ -5,7 +5,7 @@
 </div>
 
 <div align="center">
-   <strong>Banu Store</strong>
+   <strong>Banu Store's Homepage</strong>
 </div>
 
 + Canva: https://www.canva.com/design/DAF3fjvFrJM/RyKnB_YB3Bex5h7Dtq63mg/edit
