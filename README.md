@@ -23,6 +23,10 @@
 ### REFERENCES
 
 ## Technology
+<a href="https://skillicons.dev">
+<img src="https://skillicons.dev/icons?i=html,css,js,linux,git,github,react,nodejs,vscode,figma,typescript,vite&perline=6" />
+</a>
+
 ### React + TypeScript + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
