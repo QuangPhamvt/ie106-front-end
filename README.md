@@ -1,4 +1,4 @@
-# IE106-FE - User Interface Design 
+# IE106-FE - User Interface Design's Project
 
 <div align="center">
    <img src="Project/Images/Homepage.png" alt="Banu Store Homepage""/>
