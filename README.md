@@ -56,3 +56,19 @@ If you are developing a production application, we recommend updating the config
 - Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
 - Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
 - Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+
+## Study and Reference Materials
+
+### Textbooks
+1. Nguyễn Thịnh (2015). "Đồ họa ứng dụng." Đại học Quốc gia TP HCM.
+2. Yvonne Rogers, Helen Sharp, Jenny Preece (2007). "Interaction Design: Beyond Human - Computer Interaction," 2nd Edition. John Wiley & Sons.
+3. Ben Shneiderman, Catherine Plaisant (2010). "Designing the User Interface: Strategies for Effective Human-Computer Interaction," 5th Edition. Addison Wesley.
+
+### Reference Documents
+1. Prof. Rob Miller (2011). "User Interface Design and Implementation." Massachusetts Institute of Technology, Department of Electrical Engineering and Computer Science, Spring.
+2. Julie Steele, Noah Illinsky (Eds) (2010). "Beautiful Visualization: Looking at Data Through the Eyes of Experts." O’Reilly.
+
+## Software or Tools for Practice
+
+1. Microsoft Visual Studio 2010.
+2. Evolus Pencil 2012.
